@@ -4,8 +4,10 @@
 name: Maven Packages
 
 on:
-   push :
-    on branches [ main ]
+    push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   
   release:
     types: [created]
